@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const phrases = [
         'Data Tech & Business Intelligence Expert',
         'Cloud Data Analytical Engineer',
-        'Machine Learning Specialist',
+        'Machine Learning & AI Enthusiastic',
         'Data Visualization Professional',
         'Business Insights Analyst'
     ];
