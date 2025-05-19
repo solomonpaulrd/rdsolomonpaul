@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomon Paul R D - Data Tech & Business Intelligence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">SP</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Solomon Paul R D">Solomon Paul R D</h1>
+                <div class="typewriter">
+                    <span id="typewriter-text"></span><span class="cursor-blink">|</span>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+447548003762</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>solomonpaulrd7@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>141, Glenburn road, BT179BB, UK</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Open to travel within the UK</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#" class="btn secondary-btn">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="data-visualization">
+                    <canvas id="skillRadarChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Data tech & Business Intelligence enthusiast with over 8 years of experience in designing and implementing data solutions across domains. Proficient in SQL, Python, Tableau, Power BI, HTML etc. & Cloud platforms such as GCP, AWS, Azure specializing in cloud Data Analytical Engineering, ETL, ML, and querying for data analysis and processing.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="8">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50+">0</div>
+                        <div class="stat-label">BI Dashboards</div>
+                    </div>
+					<div class="stat-item">
+                        <div class="stat-number" data-count="20+">0</div>
+                        <div class="stat-label">Data Models & Engineering</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Cloud Platforms</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2>Technical Proficiencies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages, Analytics & Visualization</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="SQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Power BI">
+                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                            <div class="skill-name">Power BI</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Tableau">
+                            <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="skill-name">Tableau</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Big Query">
+                            <div class="skill-icon"><i class="fas fa-search"></i></div>
+                            <div class="skill-name">Big Query</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Excel">
+                            <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                            <div class="skill-name">Excel</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Looker">
+                            <div class="skill-icon"><i class="fas fa-search-plus"></i></div>
+                            <div class="skill-name">Looker</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="R">
+                            <div class="skill-icon"><i class="fab fa-r-project"></i></div>
+                            <div class="skill-name">R</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="HTML">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Cloud Platform & Data Solutions</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="GCP">
+                            <div class="skill-icon"><i class="fab fa-google"></i></div>
+                            <div class="skill-name">GCP</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Vertex AI">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <div class="skill-name">Vertex AI</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="AWS">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <div class="skill-name">AWS</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Azure">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <div class="skill-name">Azure</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <div class="skill-name">Docker</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Airflow">
+                            <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                            <div class="skill-name">Airflow</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Databricks">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="skill-name">Databricks</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Snowflake">
+                            <div class="skill-icon"><i class="far fa-snowflake"></i></div>
+                            <div class="skill-name">Snowflake</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Business Tools & Management</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="Salesforce">
+                            <div class="skill-icon"><i class="fab fa-salesforce"></i></div>
+                            <div class="skill-name">Salesforce</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JIRA">
+                            <div class="skill-icon"><i class="fab fa-jira"></i></div>
+                            <div class="skill-name">JIRA</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Confluence">
+                            <div class="skill-icon"><i class="fab fa-confluence"></i></div>
+                            <div class="skill-name">Confluence</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="GA4">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="skill-name">GA4</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="SEO">
+                            <div class="skill-icon"><i class="fas fa-search"></i></div>
+                            <div class="skill-name">SEO</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2>Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-date="2022 - Present">
+                    <div class="timeline-content">
+                        <h3>Data Analytics & Engineering (Data Analyst/Scientist) - Business Insights & Engineering / Cloud </h3>
+                        <h4>Mediahuis, Belfast, UK</h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Designed & innovated business data modules to streamline data optimization & enhanced performance.</li>
+                                <li>Created and managed 25+ BI dashboards and reports using Power BI, Tableau, Data Studio, Excel, and Looker, with strong use of SQL, Big Query, Python, and HTML, CSS, Java for webpage reporting.</li>
+                                <li>Developed clear cut insights & visuals and webpages on weekly, daily & monthly basis for Marketing, Sales, Ops, B2B/B2C, Editorial, & leadership teams, regularly shared on team calls to support decision-making.</li>
+                                <li>Built many data models & reports, extracting features & joining data from articles, traffic, subscriptions & etc models like Article revenue model, subscription conversion, ad campaigns impact, & traffic analysis etc.</li>
+                                <li>Built text analytics models using ML & statistical techniques like NLP, LDA, PCA, TF-IDF, clustering etc. to optimize content, analyze audience segment, and drive revenue growth strategy.</li>
+                                <li>Collaborated with multiple stakeholders to design & cross-functional teams to develop business data driven & actionable insights, monitor figures & building structures, driving business project's objectives.</li>
+                                <li>Automated multiple reports –API extraction & built complete ETL pipeline using Python Dataflow, Airflow and GCS, automated entire workflow, & created models to extract insights in report & drive improvements.</li>
+                                <li>Automated web scraping and ML solutions with Python and GCP to ensure brand safety in news sections.</li>
+                                <li>Led TGI Survey data Project: handled API data, created insights, and built an AI chatbot for live analytics.</li>
+                                <li>Supported business in GA4 migration project and developed Big Query data models, creating dashboards for teams and partner groups (Independent, Belfast telegraph, NI job finder).</li>
+                                <li>Ongoing experiments on AI products business use case, automation, actively Building via experiments with pretrained LLMs like Berts, Chat GPT APIs, Google Gemini model, Mistral, LLaMA etc.</li>
+                                <li>Coordinated & integrated of Google Ad Manager (GAM) with Piano API to enable behavioral analysis and audience segmentation by real time tracking campaign performance.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">BI Dashboards</span>
+                            <span class="tag">ML Models</span>
+                            <span class="tag">ETL Pipeline</span>
+                            <span class="tag">AI Chatbot</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-date="2020 - 2022">
+                    <div class="timeline-content">
+                        <h3>Business Analyst (Data Analytics Digital) - Business & Data</h3>
+                        <h4>Mediahuis, Belfast, UK</h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Build a data statistical modeling solution that connects multiple data sources, empowering the sales to boost revenue and effectively serve advertiser campaigns (using GCP, python). This solution was nominated for an INMA Global Media award in 2021 for Best Use of Data to Grow Advertising Sales.</li>
+                                <li>Built 10+ customized dashboards using Power BI, Tableau, and Data Studio for data analysis, tailored to the needs of departments like sales, finance, operations, marketing, and senior management.</li>
+                                <li>Extensive SQL data analysis on adhock & using Python, BigQuery and build BQ models and report building.</li>
+                                <li>Working closely with cross functional team of data & software engineers, business experts to build data solutions from scratch, this involved fetching, collecting, cleaning, transforming, and processing data, while automating the entire orchestration with Airflow or Dataflow, with the final data stored in BigQuery.</li>
+                                <li>Audience Selector Dashboard tool: Created a dynamic interactive tool that offers audience suggestions to Sales team & marketing, to integrate diverse datasets, enabling Sales team to easily select target audiences.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">Statistical Modeling</span>
+                            <span class="tag">Dashboard Development</span>
+                            <span class="tag">SQL Analysis</span>
+                            <span class="tag">Data Solutions</span>
+                            <span class="tag">Audience Targeting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-date="2018 - 2019">
+                    <div class="timeline-content">
+                        <h3>Senior Data Analyst</h3>
+                        <h4>Concentrix, Bangalore, India</h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Created an FMEA (Failure Mode and Effects Analysis) model (fraud analytics) that utilizes multiple metrics (such as AHT, CSAT, Abandon Rate, Service Level, FCR, etc.) Used Python & SQL to detect instances of employee fraud. Also identified the networks employed by employees while engaged in fraudulent activities.</li>
+                                <li>Outsourced Project: Created & automated over 70 outsourced dashboards using Tableau, Power BI, SQL from the scratch using business documentation & presented information to senior management/operational teams.</li>
+                                <li>Developed an impact analysis model to identify anomalies in call center KPIs and improve the overall customer experience & conducted an in-depth analysis of outlier feedback by encoding the relationships between words & creating a network of linked words to identify core issues.</li>
+                                <li>Text network classification and cluster model built that could effectively identify the root cause of performance issues, whether they were related to the product, brand, or agent.</li>
+                                <li>Formulated a billing model that showed cost savings opportunity of 16% of service level performance, a 3% improvement in CSAT, and a 7% reduction in costs.</li>
+                                <li>Developed best potential metrics per season using statistical analysis, clustering & predictive classifiers, applied T-tests to validate the results, strengthening customer relationships.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">Fraud Analytics</span>
+                            <span class="tag">Dashboard Automation</span>
+                            <span class="tag">Impact Analysis</span>
+                            <span class="tag">Text Classification</span>
+                            <span class="tag">Statistical Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-date="2017 - 2018">
+                    <div class="timeline-content">
+                        <h3>Intern Analyst</h3>
+                        <h4>iTech Analytic Solutions, Bangalore, India</h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Worked on ARIMA sales forecast model project, analyzed datasets, and extracted business insights.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">ARIMA Modeling</span>
+                            <span class="tag">Sales Forecasting</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-date="2016 - 2017">
+                    <div class="timeline-content">
+                        <h3>Business Analyst</h3>
+                        <h4>Regalix Inc (On Google Assignment), Bangalore, India</h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Worked at Google Office on a Web Analytics A/B testing project, Increasing customer acquisition from 10% to 42% through A/B testing, utilized Google Analytics and variable other google product to optimized mobile site performance to boost visitors and broaden client demographics.</li>
+                                <li>Built and maintained a VBA-powered Excel dashboard to track project delivery and team performance.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">A/B Testing</span>
+                            <span class="tag">Web Analytics</span>
+                            <span class="tag">VBA Dashboard</span>
+                            <span class="tag">Performance Tracking</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-date="2015">
+                    <div class="timeline-content">
+                        <h3>Assistant Manager</h3>
+                        <h4>Quikr, Bangalore, India</h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Resolves order and inventory challenges through thorough historical data analysis. Contributes to sales improvement strategies by compiling data, supporting the team in enhancing sales indices.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">Inventory Analysis</span>
+                            <span class="tag">Sales Improvement</span>
+                            <span class="tag">Data Compilation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-date="2014 - 2015">
+                    <div class="timeline-content">
+                        <h3>Digital Marketing Consultant/Business Development</h3>
+                        <h4>Soppnox, Bangalore</h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Conducted web analysis using SEO, SEM, PPC, and content strategies to prospects, adhering to Google's best practices, while managing projects to ensure accurate, timely delivery & client satisfaction.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">SEO</span>
+                            <span class="tag">SEM</span>
+                            <span class="tag">PPC</span>
+                            <span class="tag">Content Strategy</span>
+                            <span class="tag">Project Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-date="2014">
+                    <div class="timeline-content">
+                        <h3>Associate</h3>
+                        <h4>Intelliverse, Bangalore, India</h4>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Presented product information via various channels; Prepared and reviewed daily prospect reports.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">Product Presentation</span>
+                            <span class="tag">Prospect Reporting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-container">
+                <div class="education-item">
+                    <div class="education-year">2019 - 2020</div>
+                    <div class="education-content">
+                        <h3>MSc Data Science</h3>
+                        <h4>School of Computing, Engineering & Intelligent Systems, Ulster University, Londonderry, United Kingdom</h4>
+                        <p class="education-highlight">Winner of the Ulster University Seagate Prize for the highest average marks on all the modules</p>
+                        <p>Project - Prospective elderly fall risk modelling using accelerometer data.</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-year">2011 - 2013</div>
+                    <div class="education-content">
+                        <h3>MBA Marketing</h3>
+                        <h4>Indian Academy School of Management Studies, Bangalore University, Bangalore, India</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <h2>Certifications & Professional Development</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certifications-container">
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Business Metrics For Data Driven Companies</h3>
+                        <h4>Duke University</h4>
+                        <div class="cert-year">2016</div>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Machine Learning Operations (MLOps) for Generative AI</h3>
+                        <h4>Google Certified Completion</h4>
+                        <div class="cert-year">2024</div>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Generative AI Learning Path</h3>
+                        <h4>Google Certified Completion</h4>
+                        <div class="cert-year">2023</div>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Microsoft Azure For Data Engineering</h3>
+                        <h4>Microsoft Certified</h4>
+                        <div class="cert-year">2023</div>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Multivariate Data Analysis, Statistics</h3>
+                        <h4>Indian Statistical Institute</h4>
+                        <div class="cert-year">2018</div>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>GDPR Awareness (Data Protection)</h3>
+                        <h4>Mediahuis Ireland</h4>
+                        <div class="cert-year">2024</div>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>GCP Data Engineering License Certification</h3>
+                        <h4>Google</h4>
+                        <div class="cert-year">2024</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="section">
+            <div class="section-header">
+                <h2>Awards & Recognitions</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="awards-container">
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="award-content">
+                        <h3>Winner of the Ulster University Seagate Prize</h3>
+                        <p>For the highest average mark on MSc Data Science</p>
+                    </div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-content">
+                        <h3>Best Team Player Award</h3>
+                        <p>Quarterly Award - Concentrix (2018)</p>
+                    </div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-award"></i></div>
+                    <div class="award-content">
+                        <h3>INMA Global Media Award Nomination</h3>
+                        <p>For Best Use of Data to Grow Advertising Sales (2021)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="btn primary-btn">Send Message</button>
+                </div>
+                <div class="contact-info-detailed">
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-detail-content">
+                            <h3>Phone</h3>
+                            <p>+447548003762</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail-content">
+                            <h3>Email</h3>
+                            <p>solomonpaulrd7@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail-content">
+                            <h3>Location</h3>
+                            <p>110, 19 Station Street, BT3 9DB, United Kingdom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">SP</div>
+            <div class="footer-text">
+                <p>I hereby declare that all the details provided above are true to the best of my knowledge.</p>
+                <p class="signature">Solomon Paul R D</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/solomon-paul-r-d-3ba7a9a8/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Solomon Paul R D. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
