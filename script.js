@@ -217,10 +217,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const skillRadarChart = new Chart(ctx, {
             type: 'radar',
             data: {
-                labels: ['Python', 'SQL', 'Data Visualization', 'Cloud Platforms', 'Machine Learning', 'Business Intelligence'],
+                labels: ['Python', 'SQL', 'Data Visualization', 'Cloud Platforms', 'Machine Learning & AI', 'Business Intelligence', 'Data Engineering & Autoamtion'],
                 datasets: [{
                     label: 'Skills Proficiency',
-                    data: [90, 95, 85, 80, 75, 85],
+                    data: [90, 95, 95, 80, 75, 90, 75, 75],
                     backgroundColor: 'rgba(37, 99, 235, 0.2)',
                     borderColor: 'rgba(37, 99, 235, 1)',
                     pointBackgroundColor: 'rgba(37, 99, 235, 1)',
