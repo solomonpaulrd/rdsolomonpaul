@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 labels: ['Python', 'SQL', 'Data Visualization', 'Data Engineering & Automation', 'Cloud Platforms', 'Machine Learning & AI', 'Business Intelligence'],
                 datasets: [{
                     label: 'Skills Proficiency',
-                    data: [90, 95, 95, 75, 80, 75, 90],
+                    data: [90, 90, 90, 75, 80, 75, ],
                     backgroundColor: 'rgba(37, 99, 235, 0.2)',
                     borderColor: 'rgba(37, 99, 235, 1)',
                     pointBackgroundColor: 'rgba(37, 99, 235, 1)',
